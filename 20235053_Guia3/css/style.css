@@ -13,6 +13,7 @@ header{
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    z-index: 1;
 }
 
 footer{
@@ -40,14 +41,21 @@ h2{
 section{
     margin: 0 auto;
     width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
 }
 
 section article{
     font-size: 0.9rem;
     height: 340px;
-    width: 33.33%;
+    width: 32.33%;
+    margin: 0.5%;
     border: 2px dashed #16A085;
     padding: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 section article img{
@@ -57,21 +65,11 @@ section article img{
     display: block;
 }
 
-/*Revisar esto luego jajaj*/
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-}
 
 article {
 
-    flex: 1 1 calc(33.333% - 1%); 
-    box-sizing: border-box;
-    margin: 0.5%;
-    width: 32.33%;
-    overflow: hidden;
+    float:left;
+    display: flexbox;
 }
 
 h3{
@@ -87,10 +85,12 @@ section article:nth-child(2){
     position: static;
     left: 100px;
     top: 50px;
-    visibility: hidden;
+    z-index: 1;
     display: none;
 }
 
-/**/
+/*La diferencia entre display: none y visibility hidden es que con visibility el espacio 
+queda como "reservado" o en blanco  y con display none ya no se gurada ese espacio
+si no que se usa para el siguiente.*/
 
 
