@@ -10,24 +10,24 @@ body div{
 
 #sota_de_diamantes{
     z-index: 20;
-    top: 45px;
+    top: 100px;
     left:30px;
 }
 #reina_de_diamantes{
     z-index: 30;
-    top: 55px;
+    top: 120px;
     left: 45px;
 
 }
 
 #rey_de_diamantes{
     z-index: 40;
-    top: 65px;
+    top: 130px;
     left: 60px;
 }
 
 #as_de_diamantes{
     z-index: 50;
-    top: 75px;
+    top: 150px;
     left: 75px;
 }
